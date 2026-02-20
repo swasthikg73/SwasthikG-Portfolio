@@ -10,7 +10,7 @@
     --color-primary-foreground: #ffffff;
 
     --color-secondary: #1f2830;
-    --secondary-foreground: #20b2a6;
+    --color-secondary-foreground: #20b2a6;
 
     --color-muted: #252e37;
     --color-muted-foreground: #7a8491;
@@ -54,6 +54,11 @@
 
     .glow-text {
         text-shadow: 0 0 30px color-mix(in srgb, var(--color-primary) 50%, transparent)
+    }
+
+    .glow-border {
+        box-shadow: 0 0 30px color-mix(in srgb, var(--color-primary) 20%, transparent),
+            inset 0 0 20px color-mix(in srgb, var(--color-primary) 5%, transparent);
     }
 }
 
@@ -146,7 +151,6 @@
         box-shadow: 0 0 20px color-mix(in srgb, #26c4b8 20%, transparent);
     }
 
-
     @keyframes float {
 
         0%,
@@ -163,4 +167,17 @@
         animation: float 5s ease-in-out infinite;
     }
 
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .animate-marquee {
+        animation: marquee 30s linear infinite;
+    }
 }
