@@ -1,5 +1,11 @@
 import Button from "@/components/Button.jsx";
-import { ArrowRight, Github, Linkedin } from "lucide-react";
+import {
+  ArrowRight,
+  ChevronDown,
+  Download,
+  Github,
+  Linkedin,
+} from "lucide-react";
 import AnimatedBorderButton from "@/components/animatedBorderButton.jsx";
 import { Link } from "react-router-dom";
 
@@ -7,17 +13,17 @@ const Hero = () => {
   const skills = [
     "React",
     "Angular",
-    "Type Script",
-    "Java Script",
+    "TypeScript",
+    "JavaScript",
     "Node.js",
     "PostgresSQL",
     "MongoDB",
     "Vercel",
-    "Tailwind CSS",
+    "TailwindCSS",
     "Bootstrap",
     "Prisma",
     "Git",
-    "Github Actions",
+    "GithubActions",
   ];
   return (
     <section className=" relative min-h-screen overflow-hidden flex items-center">
@@ -29,7 +35,7 @@ const Hero = () => {
           className="w-full h-full object-cover opacity-40"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/20 to-background" />
+      <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/20 to-background" />
 
       {/* Green Dots */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -84,7 +90,11 @@ const Hero = () => {
                 Contact Me
                 <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton />
+
+              <AnimatedBorderButton>
+                Download CV
+                <Download className="w-5 h-5" />
+              </AnimatedBorderButton>
             </div>
 
             {/* Social Links */}
@@ -131,7 +141,7 @@ const Hero = () => {
 
                 {/* Stats Badge */}
 
-                <div className="absolute -top-4 -left-4 glass rounded-xl px-4">
+                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 animate-float">
                   <div className="text-2xl font-bold text-primary">1.5+</div>
                   <div className="text-xs text-muted-foreground">
                     Years Exp.
@@ -149,15 +159,28 @@ const Hero = () => {
             Technologies I work with
           </p>
           <div className="relative overflow-hidden">
-            <div>
+            <div className="flex animate-marquee">
               {[...skills, ...skills].map((skills, index) => (
-                <div key={index}>
-                  <span>{skills}</span>
+                <div key={index} className="shrink-0 px-8 py-4">
+                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
+                    {skills}
+                  </span>
                 </div>
               ))}
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Scroll Button  */}
+
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-600 z-99">
+        <Link
+          to="#about"
+          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors cursor-pointer">
+          <span className="uppercase text-xs tracking-wide">Scroll</span>
+          <ChevronDown className="w-6 h-6 animate-bounce" />
+        </Link>
       </div>
     </section>
   );
