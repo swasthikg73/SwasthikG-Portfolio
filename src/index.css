@@ -24,9 +24,12 @@
 }
 
 @layer base {
-    html {
+
+    html,
+    * {
         scroll-behavior: smooth;
     }
+
 
     body {
         background-color: var(--color-background);
@@ -36,6 +39,10 @@
 
     .font-serif {
         font-family: "Playfair Display", serif;
+    }
+
+    button {
+        cursor: pointer;
     }
 }
 
