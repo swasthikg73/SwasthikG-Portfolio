@@ -16,7 +16,7 @@ const experience = [
   },
 
   {
-    period: "Oct 2024 - Mar 2025",
+    period: "Oct 2023 - Mar 2025",
     role: "Software Testing engineer",
     company: "Folkslogic Technologies",
     description:
@@ -34,7 +34,7 @@ const experience = [
   },
 
   {
-    period: "June 2024 - Sep 2024",
+    period: "June 2023 - Sep 2023",
     role: "Testing Intern",
     company: "Folkslogic Technologies",
     description:
