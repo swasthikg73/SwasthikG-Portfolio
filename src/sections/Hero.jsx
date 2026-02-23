@@ -77,19 +77,22 @@ const Hero = () => {
                 </span>
               </h1>
 
-              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Swasthik G - a software developer specializing in MERN
-                and Angular. I build scalable, performant web applications that
-                users love.
+              <p className="text-lg text-white/80 max-w-lg animate-fade-in animation-delay-200">
+                Hi, I’m Swasthik G — a junior software developer working with
+                MERN and Angular. I love building responsive, user-friendly web
+                apps and continuously improving my skills by learning, building,
+                and experimenting.
               </p>
             </div>
 
             {/* Contact Buttons */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300 items-center">
-              <Button size="lg">
-                Contact Me
-                <ArrowRight className="w-5 h-5" />
-              </Button>
+              <a href="#contacts">
+                <Button size="lg">
+                  Contact Me
+                  <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
 
               <AnimatedBorderButton>
                 Download CV
@@ -102,10 +105,16 @@ const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow :</span>
 
-              <Link className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
+              <Link
+                className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                target="_blank"
+                to="https://github.com/swasthikg73">
                 <Github className="w-5 h-5" />
               </Link>
-              <Link className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
+              <Link
+                className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                to="https://www.linkedin.com/in/swasthik-g-510840266/"
+                target="_blank">
                 <Linkedin className="w-5 h-5" />
               </Link>
             </div>
@@ -142,7 +151,7 @@ const Hero = () => {
                 {/* Stats Badge */}
 
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 animate-float">
-                  <div className="text-2xl font-bold text-primary">1.5+</div>
+                  <div className="text-2xl font-bold text-primary">1+</div>
                   <div className="text-xs text-muted-foreground">
                     Years Exp.
                   </div>
@@ -162,7 +171,7 @@ const Hero = () => {
             <div className="flex animate-marquee">
               {[...skills, ...skills].map((skills, index) => (
                 <div key={index} className="shrink-0 px-8 py-4">
-                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
+                  <span className="text-sm md:text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
                     {skills}
                   </span>
                 </div>
