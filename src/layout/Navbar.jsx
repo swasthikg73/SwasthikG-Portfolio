@@ -3,16 +3,40 @@ import Button from "@/components/Button";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 const navLinks = [
-  { href: "/#about", label: "About" },
-  { href: "/#projects", label: "Projects" },
-  { href: "/#experience", label: "Experience" },
-  { href: "/#testimonials", label: "Testimonials" },
+  { href: "/#about", label: "About", id: "about" },
+  { href: "/#projects", label: "Projects", id: "projects" },
+  { href: "/#experience", label: "Experience", id: "experience" },
+  // { href: "/#testimonials", label: "Testimonials", id:"testimonials" },
 ];
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [active, setActive] = useState(null);
 
   const [isScroll, setScroll] = useState(false);
+
+  //Adding active class to nav options
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.2, // 60% visible
+      },
+    );
+
+    navLinks.forEach(({ id }) => {
+      const section = document.getElementById(id);
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,7 +56,7 @@ const Navbar = () => {
        ${isScroll ? "glass-strong py-4" : "bg-transparent py-5"} z-50`}>
         <nav className="container mx-auto px-6 flex justify-between items-center ">
           <Link className="text-xl font-bold tracking-tight hover:text-primary">
-            PM<span>.</span>
+            Swasthik G<span>.</span>
           </Link>
 
           {/* Desktop view Nav */}
@@ -42,7 +66,7 @@ const Navbar = () => {
                 <a
                   key={index}
                   href={link.href}
-                  className="px-4 py-1 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface">
+                  className={`px-4 py-1 text-sm  hover:text-foreground rounded-full hover:bg-surface ${active === link.id ? "text-amber-300" : "text-muted-foreground"}`}>
                   {link.label}
                 </a>
               ))}
@@ -51,7 +75,9 @@ const Navbar = () => {
 
           {/* Contacts Button */}
           <div className="hidden md:block">
-            <Button size="sm">Contact Me</Button>
+            <a href="#contacts">
+              <Button size="sm">Contact Me</Button>
+            </a>
           </div>
 
           {/* Mobile view Menu Buttons */}
