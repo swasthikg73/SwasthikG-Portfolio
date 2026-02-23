@@ -3,9 +3,9 @@ import Button from "@/components/Button";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 const navLinks = [
-  { href: "/#about", label: "About", id: "about" },
-  { href: "/#projects", label: "Projects", id: "projects" },
-  { href: "/#experience", label: "Experience", id: "experience" },
+  { href: "#about", label: "About", id: "about" },
+  { href: "#projects", label: "Projects", id: "projects" },
+  { href: "#experience", label: "Experience", id: "experience" },
   // { href: "/#testimonials", label: "Testimonials", id:"testimonials" },
 ];
 
