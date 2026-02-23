@@ -7,7 +7,7 @@ const projects = [
     title: "CraveX",
     description:
       "CraveX is a MERN-based food delivery platform that connects customers with restaurant owners. Users can browse menus, place orders, track deliveries, and make secure payments, while restaurant Owners manage menus, orders, and analytics — all through a seamless and responsive experience.",
-    image: "../../public/projects/project1.png",
+    image: `${import.meta.env.BASE_URL}projects/project1.png`,
     link: "https://cravex-a-food-app.onrender.com/",
     githubLink: "https://github.com/swasthikg73/CraveX",
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "RazorPay"],
@@ -16,7 +16,7 @@ const projects = [
     title: "SparkGPT",
     description:
       "SparkGPT is a modern AI-powered  Text and Image generation web application built using the MERN stack (MongoDB, Express, React, Node.js) with Tailwind CSS for a clean, responsive UI. It is designed to provide fast, intelligent, and interactive AI experiences with a scalable and production-ready architecture",
-    image: "../../public/projects/project2.png",
+    image: `${import.meta.env.BASE_URL}projects/project2.png`,
     link: "https://spark-gpt-fawn.vercel.app/",
     githubLink: "https://github.com/swasthikg73/SparkGPT",
     technologies: [
@@ -35,7 +35,7 @@ const projects = [
     title: "Housify",
     description:
       "Housify is a modern real estate web application built using the MERN stack. It allows users to explore property listings, post their own properties, and communicate directly with property owners through real-time messaging",
-    image: "../../public/projects/project3.png",
+    image: `${import.meta.env.BASE_URL}projects/project3.png`,
     link: "https://housify-theta.vercel.app/",
     githubLink: "https://github.com/swasthikg73/Housify",
     technologies: [
@@ -51,7 +51,7 @@ const projects = [
     title: "SnapErase",
     description:
       "SnapErase is a powerful AI-based web application that allows users to instantly remove backgrounds from images with high accuracy. Built using the MERN stack, it integrates advanced AI services and modern authentication and payment systems to deliver a smooth user experience.",
-    image: "../../public/projects/project4.png",
+    image: `${import.meta.env.BASE_URL}projects/project4.png`,
     link: "https://snap-erase-nu.vercel.app/",
     githubLink: "https://github.com/swasthikg73/SnapErase",
     technologies: [
