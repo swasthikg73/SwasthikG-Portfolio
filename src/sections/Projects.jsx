@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUp, ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight, Github } from "lucide-react";
 
 import AnimatedBorderButton from "@/components/animatedBorderButton.jsx";
 import { Link } from "react-router-dom";
