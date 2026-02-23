@@ -47,35 +47,32 @@ const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate Web Developer Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Harum illo corrupti veritatis
-                neque suscipit, minus, reprehenderit et alias sit commodi
-                consequuntur delectus sint ullam animi. Aliquid consequuntur
-                pariatur sed culpa?.
+                I’m a passionate Web Developer who loves building web
+                applications and exploring new technologies. I enjoy writing
+                clean code and creating interfaces that users enjoy using.
               </p>
 
               <p>
-                I specilaize in react, Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Cumque, ipsa? Nostrum voluptates reprehenderit
-                corrupti aperiam doloribus soluta, corporis illo excepturi minus
-                officia odit suscipit vel voluptatum cumque ullam aliquid
-                laboriosam!.
+                I’m a passionate Web Developer specializing in React, Angular,
+                Node.js, Express, Tailwind CSS, and the MERN stack. I enjoy
+                breaking down complex problems into simple solutions,
+                continuously learning new technologies, and improving my skills
+                through hands-on projects. I’m comfortable working in
+                collaborative environments and aim to deliver high-quality user
+                experiences.
               </p>
 
               <p>
-                When I'm not coding Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Voluptate placeat excepturi reiciendis
-                nostrum? Provident recusandae cumque vel inventore asperiores
-                excepturi alias omnis veritatis, culpa placeat perspiciatis qui
-                autem, consectetur velit!.
+                When I’m not coding, I enjoy exploring new tech, learning from
+                the developer community, and working on personal projects.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foregroun">
-                "My mission to create Provident recusandae cumque vel inventore
-                asperiores excepturi alias omnis veritatis, culpa placeat
-                perspiciatis qui autem, consectetur velit!."
+                "My mission is to grow as a developer by learning every day,
+                building useful products, and contributing to impactful digital
+                solutions."
               </p>
             </div>
           </div>
