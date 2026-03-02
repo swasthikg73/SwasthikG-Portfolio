@@ -130,11 +130,11 @@ const Hero = () => {
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src={`${import.meta.env.BASE_URL}profile-photo.jpg`}
+                  src={`${import.meta.env.BASE_URL}profile4.png`}
                   alt="Swasthik G"
                   className="w-full aspect-4/5 object-cover rounded-2xl"
                 />
-
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 {/* Floating Badge */}
 
                 <div
