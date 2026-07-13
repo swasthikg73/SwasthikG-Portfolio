@@ -12,6 +12,29 @@ const projects = [
     githubLink: "https://github.com/swasthikg73/CraveX",
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "RazorPay"],
   },
+
+  {
+    title: "CodeXa",
+    description:
+      "CodeXa is a full-stack MERN-based coding interview platform featuring secure authentication, real-time video interviews, collaborative code editing, isolated code execution, automated test case evaluation, live chat, screen sharing, coding practice mode, analytics dashboard, background job processing with Inngest, and deployment on Render. Implemented modern development practices including Git workflows, pull requests, and CodeRabbit-powered code reviews.",
+    image: `${import.meta.env.BASE_URL}projects/codexa.png`,
+    link: "https://codexa-1epj.onrender.com/",
+    githubLink: "https://github.com/swasthikg73/Codexa",
+    technologies: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "Clerk Authentication",
+      "Stream Video SDK",
+      "TanStack Query",
+      "Inngest",
+      "Docker-based Code Execution",
+      "Git & GitHub",
+      "Render",
+    ],
+  },
+
   {
     title: "SparkGPT",
     description:

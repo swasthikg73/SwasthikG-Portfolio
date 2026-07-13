@@ -94,10 +94,14 @@ const Hero = () => {
                 </Button>
               </a>
 
-              <AnimatedBorderButton>
-                Download CV
-                <Download className="w-5 h-5" />
-              </AnimatedBorderButton>
+              <a
+                href="/Web_Developer_Swasthik_G.pdf"
+                download="Web_Developer_Swasthik_G.pdf">
+                <AnimatedBorderButton>
+                  Download CV
+                  <Download className="w-5 h-5" />
+                </AnimatedBorderButton>{" "}
+              </a>
             </div>
 
             {/* Social Links */}
