@@ -68,6 +68,10 @@ function Contacts() {
         message:
           "Message sent successfully! Thanks for connecting — I’ll be in touch soon.",
       });
+
+      Object.keys(formData).forEach((key) => {
+        formData[key] = "";
+      });
     } catch (error) {
       console.log(error);
       setSubmitStatus({
